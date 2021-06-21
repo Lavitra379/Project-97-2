@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LetsChat</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="kwitter_room.css">
+    <script src="kwitter_room.js"></script>
+</head>
+
+<body onload="un()">
+    <div class="row">
+        <div class="column">
+            <img id="log_out" onclick="logout()" src="log_out.jpg"
+                style="height: 50px; width: 50px; border-radius: 2px;">
+            <h5>log out</h5>
+        </div>
+        <div class="column">
+            <center>
+                <h1>LetsChat</h1>
+                <br>
+                <h3 id="username1"  ></h3>
+                <input type="text" id="room_name" placeholder="Type room name">
+                <br>
+                <button id="add_room" onclick="addroom()">Add room</button>
+                <br>
+                <br>
+                <h4 id="room_name_holder"></h4>
+
+
+
+            </center>
+        </div>
+
+    </div>
+</body>
